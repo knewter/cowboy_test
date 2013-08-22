@@ -1,0 +1,12 @@
+{application, cowboytest,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { cowboytest_app, []}},
+  {env, []}
+ ]}.
