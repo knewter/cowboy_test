@@ -1,4 +1,4 @@
-%% script generated at {2013,8,21} {21,13,11}
+%% script generated at {2013,8,21} {23,55,57}
 {script,
     {"cowboytest","1"},
     [{preLoaded,
@@ -44,7 +44,7 @@
      {path,["$ROOT/lib/cowboytest-1/ebin"]},
      {primLoad,
          [cowboytest,cowboytest_app,cowboytest_http,cowboytest_http_catchall,
-          cowboytest_http_static,cowboytest_sup]},
+          cowboytest_http_static,cowboytest_sup,toppage_handler,ws_handler]},
      {path,["$ROOT/lib/asn1-2.0.2/ebin"]},
      {primLoad,
          [asn1_db,asn1ct,asn1ct_check,asn1ct_constructed_ber_bin_v2,
@@ -376,7 +376,7 @@
                    {modules,
                        [cowboytest,cowboytest_app,cowboytest_http,
                         cowboytest_http_catchall,cowboytest_http_static,
-                        cowboytest_sup]},
+                        cowboytest_sup,toppage_handler,ws_handler]},
                    {registered,[]},
                    {applications,[kernel,stdlib]},
                    {included_applications,[]},

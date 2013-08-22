@@ -1,0 +1,78 @@
+
+=====
+===== LOGGING STARTED Wed Aug 21 21:17:46 CDT 2013
+=====
+Exec: /home/jadams/erlang/cowboy_test/rel/cowboytest/erts-5.10.2/bin/erlexec -boot /home/jadams/erlang/cowboy_test/rel/cowboytest/releases/1/cowboytest -mode embedded -config /home/jadams/erlang/cowboy_test/rel/cowboytest/releases/1/sys.config -args_file /home/jadams/erlang/cowboy_test/rel/cowboytest/releases/1/vm.args -- console ''
+Root: /home/jadams/erlang/cowboy_test/rel/cowboytest
+Erlang R16B01 (erts-5.10.2) [source-bdf5300] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+
+=INFO REPORT==== 21-Aug-2013::21:17:49 ===
+cowboytest listening on http://127.0.0.1:80/
+Eshell V5.10.2  (abort with ^G)
+(cowboytest@127.0.0.1)1> 
+=INFO REPORT==== 21-Aug-2013::21:17:49 ===
+    application: cowboytest
+    exited: {{shutdown,
+              {failed_to_start_child,cowboytest_http,
+               {undef,
+                [{cowboy,start_listener,
+                  [http,16,cowboy_tcp_transport,
+                   [{port,80}],
+                   cowboy_http_protocol,
+                   [{dispatch,
+                     [{'_',
+                       [{[],cowboytest_http_static,
+                         [<<"html">>,<<"index.html">>]},
+                        {'_',cowboytest_http_catchall,[]}]}]}]],
+                  []},
+                 {cowboytest_http,init,1,
+                  [{file,"src/cowboytest_http.erl"},{line,44}]},
+                 {gen_server,init_it,6,[{file,"gen_server.erl"},{line,304}]},
+                 {proc_lib,init_p_do_apply,3,
+                  [{file,"proc_lib.erl"},{line,239}]}]}}},
+             {cowboytest_app,start,[normal,[]]}}
+    type: permanent
+{"Kernel pid terminated",application_controller,"{application_start_failure,cowboytest,{{shutdown,{failed_to_start_child,cowboytest_http,{undef,[{cowboy,start_listener,[http,16,cowboy_tcp_transport,[{port,80}],cowboy_http_protocol,[{dispatch,[{'_',[{[],cowboytest_http_static,[<<\"html\">>,<<\"index.html\">>]},{'_',cowboytest_http_catchall,[]}]}]}]],[]},{cowboytest_http,init,1,[{file,\"src/cowboytest_http.erl\"},{line,44}]},{gen_server,init_it,6,[{file,\"gen_server.erl\"},{line,304}]},{proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,239}]}]}}},{cowboytest_app,start,[normal,[]]}}}"}
+
+Crash dump was written to: erl_crash.dump
+Kernel pid terminated (application_controller) ({application_start_failure,cowboytest,{{shutdown,{failed_to_start_child,cowboytest_http,{undef,[{cowboy,start_listener,[http,16,cowboy_tcp_transport,[
+
+=====
+===== LOGGING STARTED Wed Aug 21 21:18:18 CDT 2013
+=====
+Exec: /home/jadams/erlang/cowboy_test/rel/cowboytest/erts-5.10.2/bin/erlexec -boot /home/jadams/erlang/cowboy_test/rel/cowboytest/releases/1/cowboytest -mode embedded -config /home/jadams/erlang/cowboy_test/rel/cowboytest/releases/1/sys.config -args_file /home/jadams/erlang/cowboy_test/rel/cowboytest/releases/1/vm.args -- console ''
+Root: /home/jadams/erlang/cowboy_test/rel/cowboytest
+Erlang R16B01 (erts-5.10.2) [source-bdf5300] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+
+=INFO REPORT==== 21-Aug-2013::21:18:21 ===
+cowboytest listening on http://127.0.0.1:80/
+Eshell V5.10.2  (abort with ^G)
+(cowboytest@127.0.0.1)1> 
+=INFO REPORT==== 21-Aug-2013::21:18:21 ===
+    application: cowboytest
+    exited: {{shutdown,
+              {failed_to_start_child,cowboytest_http,
+               {undef,
+                [{cowboy,start_listener,
+                  [http,16,cowboy_tcp_transport,
+                   [{port,80}],
+                   cowboy_http_protocol,
+                   [{dispatch,
+                     [{'_',
+                       [{[],cowboytest_http_static,
+                         [<<"html">>,<<"index.html">>]},
+                        {'_',cowboytest_http_catchall,[]}]}]}]],
+                  []},
+                 {cowboytest_http,init,1,
+                  [{file,"src/cowboytest_http.erl"},{line,44}]},
+                 {gen_server,init_it,6,[{file,"gen_server.erl"},{line,304}]},
+                 {proc_lib,init_p_do_apply,3,
+                  [{file,"proc_lib.erl"},{line,239}]}]}}},
+             {cowboytest_app,start,[normal,[]]}}
+    type: permanent
+{"Kernel pid terminated",application_controller,"{application_start_failure,cowboytest,{{shutdown,{failed_to_start_child,cowboytest_http,{undef,[{cowboy,start_listener,[http,16,cowboy_tcp_transport,[{port,80}],cowboy_http_protocol,[{dispatch,[{'_',[{[],cowboytest_http_static,[<<\"html\">>,<<\"index.html\">>]},{'_',cowboytest_http_catchall,[]}]}]}]],[]},{cowboytest_http,init,1,[{file,\"src/cowboytest_http.erl\"},{line,44}]},{gen_server,init_it,6,[{file,\"gen_server.erl\"},{line,304}]},{proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,239}]}]}}},{cowboytest_app,start,[normal,[]]}}}"}
+
+Crash dump was written to: erl_crash.dump
+Kernel pid terminated (application_controller) ({application_start_failure,cowboytest,{{shutdown,{failed_to_start_child,cowboytest_http,{undef,[{cowboy,start_listener,[http,16,cowboy_tcp_transport,[

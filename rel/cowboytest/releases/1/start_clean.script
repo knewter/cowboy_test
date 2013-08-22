@@ -1,4 +1,4 @@
-%% script generated at {2013,8,21} {21,13,11}
+%% script generated at {2013,8,21} {23,55,57}
 {script,
     {"start_clean",[]},
     [{preLoaded,
@@ -56,7 +56,7 @@
      {path,["$ROOT/lib/cowboytest-1/ebin"]},
      {primLoad,
          [cowboytest,cowboytest_app,cowboytest_http,cowboytest_http_catchall,
-          cowboytest_http_static,cowboytest_sup]},
+          cowboytest_http_static,cowboytest_sup,toppage_handler,ws_handler]},
      {path,["$ROOT/lib/crypto-3.0/ebin"]},
      {primLoad,[crypto,crypto_app,crypto_server,crypto_sup]},
      {path,["$ROOT/lib/syntax_tools-1.6.11/ebin"]},
@@ -392,7 +392,7 @@
                    {modules,
                        [cowboytest,cowboytest_app,cowboytest_http,
                         cowboytest_http_catchall,cowboytest_http_static,
-                        cowboytest_sup]},
+                        cowboytest_sup,toppage_handler,ws_handler]},
                    {registered,[]},
                    {applications,[kernel,stdlib]},
                    {included_applications,[]},

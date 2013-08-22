@@ -11,6 +11,7 @@ ensure_started(App) ->
 
 start() ->
     ensure_started(crypto),
+    ensure_started(ranch),
     ensure_started(sasl),
     ensure_started(cowboy),
     application:start(cowboytest).

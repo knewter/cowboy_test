@@ -1,0 +1,99 @@
+
+=CRASH REPORT==== 21-Aug-2013::21:18:21 ===
+  crasher:
+    initial call: cowboytest_http:init/1
+    pid: <0.1001.0>
+    registered_name: []
+    exception exit: {undef,
+                     [{cowboy,start_listener,
+                       [http,16,cowboy_tcp_transport,
+                        [{port,80}],
+                        cowboy_http_protocol,
+                        [{dispatch,
+                          [{'_',
+                            [{[],cowboytest_http_static,
+                              [<<"html">>,<<"index.html">>]},
+                             {'_',cowboytest_http_catchall,[]}]}]}]],
+                       []},
+                      {cowboytest_http,init,1,
+                       [{file,"src/cowboytest_http.erl"},{line,44}]},
+                      {gen_server,init_it,6,
+                       [{file,"gen_server.erl"},{line,304}]},
+                      {proc_lib,init_p_do_apply,3,
+                       [{file,"proc_lib.erl"},{line,239}]}]}
+      in function  gen_server:init_it/6 (gen_server.erl, line 328)
+    ancestors: [cowboytest_sup,<0.999.0>]
+    messages: []
+    links: [<0.1000.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 927
+  neighbours:
+
+=SUPERVISOR REPORT==== 21-Aug-2013::21:18:21 ===
+     Supervisor: {local,cowboytest_sup}
+     Context:    start_error
+     Reason:     {undef,
+                     [{cowboy,start_listener,
+                          [http,16,cowboy_tcp_transport,
+                           [{port,80}],
+                           cowboy_http_protocol,
+                           [{dispatch,
+                                [{'_',
+                                     [{[],cowboytest_http_static,
+                                       [<<"html">>,<<"index.html">>]},
+                                      {'_',cowboytest_http_catchall,[]}]}]}]],
+                          []},
+                      {cowboytest_http,init,1,
+                          [{file,"src/cowboytest_http.erl"},{line,44}]},
+                      {gen_server,init_it,6,
+                          [{file,"gen_server.erl"},{line,304}]},
+                      {proc_lib,init_p_do_apply,3,
+                          [{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,undefined},
+                  {name,cowboytest_http},
+                  {mfargs,{cowboytest_http,start_link,[]}},
+                  {restart_type,permanent},
+                  {shutdown,5000},
+                  {child_type,worker}]
+
+
+=CRASH REPORT==== 21-Aug-2013::21:18:21 ===
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.998.0>
+    registered_name: []
+    exception exit: {{shutdown,
+                      {failed_to_start_child,cowboytest_http,
+                       {undef,
+                        [{cowboy,start_listener,
+                          [http,16,cowboy_tcp_transport,
+                           [{port,80}],
+                           cowboy_http_protocol,
+                           [{dispatch,
+                             [{'_',
+                               [{[],cowboytest_http_static,
+                                 [<<"html">>,<<"index.html">>]},
+                                {'_',cowboytest_http_catchall,[]}]}]}]],
+                          []},
+                         {cowboytest_http,init,1,
+                          [{file,"src/cowboytest_http.erl"},{line,44}]},
+                         {gen_server,init_it,6,
+                          [{file,"gen_server.erl"},{line,304}]},
+                         {proc_lib,init_p_do_apply,3,
+                          [{file,"proc_lib.erl"},{line,239}]}]}}},
+                     {cowboytest_app,start,[normal,[]]}}
+      in function  application_master:init/4 (application_master.erl, line 133)
+    ancestors: [<0.997.0>]
+    messages: [{'EXIT',<0.999.0>,normal}]
+    links: [<0.997.0>,<0.954.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 124
+  neighbours:

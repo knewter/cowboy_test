@@ -1,0 +1,8 @@
+run_erl [11056] Wed Aug 21 21:18:18 2013
+Args before exec of shell:
+run_erl [11056] Wed Aug 21 21:18:18 2013
+argv[0] = sh
+run_erl [11056] Wed Aug 21 21:18:18 2013
+argv[1] = -c
+run_erl [11056] Wed Aug 21 21:18:18 2013
+argv[2] = exec /home/jadams/erlang/cowboy_test/rel/cowboytest/bin/cowboytest console \'\' 

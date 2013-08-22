@@ -1,4 +1,4 @@
-%% app generated at {2013,8,21} {21,13,24}
+%% app generated at {2013,8,21} {23,56,2}
 {application,compiler,
              [{description,"ERTS  CXC 138 10"},
               {vsn,"4.9.2"},
